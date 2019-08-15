@@ -2,10 +2,10 @@
 Author: Kyle Martin
 
 Required Modules:
-AzureAD Powershell Module
-MSOnline Powershell Module
-Microsoft.XRMDATA Powershell module for Dynamics
-Microsoft.XRM.Tooling CRM Connector module for Dynamics
+- AzureAD Powershell Module
+- MSOnline Powershell Module
+- Microsoft.XRMDATA Powershell module for Dynamics
+- Microsoft.XRM.Tooling CRM Connector module for Dynamics
 
 Usage:
 
