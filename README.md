@@ -1,4 +1,4 @@
-# Dynamics_PoSh_Public - New Dynamics User Creation
+# New Dynamics User Creation Automation
 Author: Kyle Martin
 
 Required Modules:
