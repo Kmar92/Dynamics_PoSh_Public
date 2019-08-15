@@ -29,7 +29,7 @@ If any fields are not required - leave them blank.
 
 Define CSV Path in variable at line 10. 
 
-Before running the script, please add variables for Azure DataSync server if required, your Dynamics instance URL & a path for your logfile. You will also need to add your O365 tenant name for licensing sku's. 
+Before running the script, please add variables for Azure AD Connect server if required for sync, your Dynamics instance URL & a path for your logfile. You will also need to add your O365 tenant name for licensing sku's. 
 
 If you require adding users to AD/AAD security groups as part of the on board process, use these variables, otherwise comment them out.
 
