@@ -7,6 +7,7 @@
 
 
 #Variables
+$CSVPath = "Path\Users.csv"
 $DynamicsURL = ""
 $AADSyncServer = ''
 $O365Tenant = ""
@@ -343,7 +344,7 @@ function Set-D365MailSettings{
 
 
 #Import the CSV
-$Users = Import-CSV -Path .\Users.CSV
+$Users = Import-CSV -Path $CSVPath
 
 #Login to the services
 Write-Log -message "Prompting user for O365 Credentials to login to required services."
