@@ -12,14 +12,14 @@ Usage:
 This script requires data fed from a CSV. The headers are:
 Username,Email,License,xPerido,GPBO,BU,Team,SR
 
-Username: AD Domain login name
-Email: Email address
-License: License type, CS for Customer Service, TM for Team Members.
-xPerido: Yes/No, if the user requires xPerido and related config.
-GPBO: This is a custom field that can be modified.
-BU: Business unit to assign
-Team: Additional team to be assigned
-SR: Additional security role to be assigned
+- Username: AD Domain login name
+- Email: Email address
+- License: License type, CS for Customer Service, TM for Team Members.
+- xPerido: Yes/No, if the user requires xPerido and related config.
+- GPBO: This is a custom field that can be modified.
+- BU: Business unit to assign
+- Team: Additional team to be assigned
+- SR: Additional security role to be assigned
 
 Example CSV:
 Username,Email,License,xPerido,GPBO,BU,Team,SR
