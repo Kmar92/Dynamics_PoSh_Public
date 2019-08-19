@@ -13,7 +13,7 @@ $AADSyncServer = ''
 $O365Tenant = ""
 $ADGroups = @('ADGroup1', 'ADGroup2')
 $AADGroups = @('GroupObjectID1', 'GroupObjectID2')
-$credentials = Get-Credential
+$credentials = Get-Credential -Message "Please enter credentials for AAD Sync server."
 [string]$date = Get-Date -format "yyyyMMdd"
 $LogFile = "Path\Log_$Date.Log"
 
@@ -160,7 +160,7 @@ Function Import-Services{
     $LoggedUser = $Env:USERNAME
     $LoggedUserEmail = Get-ADUser -Identity $LoggedUser | Select-Object UserPrincipalName
     $LoggedEmail = $LoggedUserEmail.UserPrincipalName
-    $Admin = Get-Credential("$LoggedEmail")
+    $Admin = Get-Credential("$LoggedEmail") -Message "Please enter credentials with required permissions for O365 services."
     Connect-MsolService -Credential $Admin
     Connect-AzureAD -Credential $Admin | Out-Null
     Connect-CrmOnline -ServerUrl $DynamicsURL -Credential $Admin | Out-Null 
